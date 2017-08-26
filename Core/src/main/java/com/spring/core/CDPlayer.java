@@ -1,9 +1,10 @@
 package com.spring.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("cdPlayer")
 public class CDPlayer {
 	@Autowired
 	private Song song;

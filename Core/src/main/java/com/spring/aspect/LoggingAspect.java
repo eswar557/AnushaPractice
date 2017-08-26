@@ -57,6 +57,6 @@ public class LoggingAspect {
 	@Around("execution(String com.spring.core.Song.get*(..))")
 	public Object aroundgetMethodLogger(ProceedingJoinPoint a) throws Throwable {
 		Object val = a.proceed();
-		return "AR Rehman - " + val.toString();
+		return val.toString();
 	}
 }
