@@ -54,13 +54,12 @@ public class JDBCContactDAO implements ContactDAO {
 	}
 
 	public void update(Contact contact) {
-		// TODO Auto-generated method stub
+		this.jdbcTemplate.update("UPDATE CONTACT SET LAST_NAME = ?, FIRST_NAME = ? WHERE ID = ?", contact.getLastName(), contact.getFirstName(), contact.getId());
 
 	}
 
 	public void delete(Long id) {
-		// TODO Auto-generated method stub
-
+		this.jdbcTemplate.update("DELETE FROM CONTACT WHERE ID = ?", id);
 	}
 
 }
