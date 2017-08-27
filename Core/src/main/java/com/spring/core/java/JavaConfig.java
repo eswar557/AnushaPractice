@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ComponentScan(basePackages={"com.spring"})
-@ImportResource({"config.xml"})
+@EnableAspectJAutoProxy
 public class JavaConfig {
 	// EMPTY
 }

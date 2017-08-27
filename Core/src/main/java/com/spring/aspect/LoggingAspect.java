@@ -13,10 +13,10 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class LoggingAspect {
-	//1a. Around - Before
+	//1a. Before .proceed()
 	//1b. Before
 	//2a. actual method
-	//2b. Around - After
+	//2b. After .proceed
 	//3. After
 	//4. After return(if it is successful)
 	//5. After throwing(if exception occurred)
