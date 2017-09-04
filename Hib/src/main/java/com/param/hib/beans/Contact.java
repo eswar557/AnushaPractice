@@ -1,21 +1,12 @@
-package com.spring.beans;
+package com.param.hib.beans;
 
 import java.util.Date;
-import java.util.List;
 
-import org.springframework.stereotype.Component;
-
-@Component("contact")
 public class Contact {
 	private Long id;
 	private String firstName;
 	private String lastName;
 	private Date dateOfBirth;
-	private List<ContactTelDetail> contactTelDetails;
-
-	public List<ContactTelDetail> getContactTelDetails() {
-		return contactTelDetails;
-	}
 
 	public Long getId() {
 		return id;
